@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "https://github.com/glyphx/learn-private-module-root.git"
+  source  = "app.terraform.io/glyphx/s3-webapp/aws"
   name        = var.name
   region = var.region
   prefix = var.prefix
