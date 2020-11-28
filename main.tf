@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "s3-webapp" {
-  source  = "http://github.com/glyphx/learn-private-module-root"
+  source  = "git::https://github.com/glyphx/learn-private-module-root.git"
   name        = var.name
   region = var.region
   prefix = var.prefix
